@@ -41,19 +41,27 @@
             text-align: center;
         }
 
-        img {
-            display: block;
+        .image-container {
+            width: 300px; /* Adjust the width as needed */
+            height: 300px; /* Adjust the height as needed */
             margin: auto;
-            margin-top: 20px;
             border: 5px solid #333;
             border-radius: 10px;
+            overflow: hidden;
+        }
+
+        img {
+            display: block;
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
         }
     </style>
 </head>
 <body>
 
 <header>
-    <h1>Ashley Jhowie Knqqa Racer</h1>
+    <h1>Ashley Jhowie - Supreme Being</h1>
 </header>
 
 <nav>
@@ -65,7 +73,9 @@
 
 <div>
     <p>Supreme Being lang malakas ulol.</p>
-    <img src="solo leveling.jpg" style="width:500px;height:500px;" alt="Solo Leveling">
+    <div class="image-container">
+        <img src="solo_leveling.jpg" alt="Solo Leveling">
+    </div>
 </div>
 
 </body>
